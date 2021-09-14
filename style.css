@@ -1,0 +1,166 @@
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+
+/* Header */
+.header {
+    height: 63px;
+    width: 100%;
+    background: linear-gradient(#09363f,#134f49);
+}
+
+.container {
+    height: 100%;
+    width: 63.44%;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+}
+
+.rightContainer {
+    width: 74%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list {
+    width: 78%;
+    display: flex;
+    cursor: pointer;
+}
+
+.hotline {
+    width: 22%;
+    height: 60%;
+    border: 1px solid #edce87;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.list .item {
+    margin: 0 auto;
+}
+
+.hotline .phoneNumber {
+    margin-left: 15%;
+    text-align: center;
+}
+
+/* 
+@media (max-width: 46.1875em)
+@media (min-width: 46.25em) and (max-width: 63.9375em)
+*/
+
+/* Responsive */
+.navbar, .exit {
+    display: none;
+}
+
+.exit {
+    left: 0;
+    position: absolute;
+    font-size: 1.6em;
+}
+
+.nav-list {
+    width: 66%;
+    max-width: 320px;
+    height: calc(100vh + 63px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.nav-list-item {
+    margin-top: 64px;
+    width: 100%;
+    height: 80%;
+}
+
+.nav-list .nav-item {
+    height: 100%;
+    height: 12%;
+}
+
+.nav-list-item .nav-item:active {
+    background-color: rgb(148, 143, 143);
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear 0.2s;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+
+    /* Header */
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .rightContainer {
+        width: 20%;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .hotline {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        font-size: 1.3em;
+        position: absolute;
+        right: 22%;
+    }
+
+}
