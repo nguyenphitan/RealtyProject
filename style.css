@@ -306,7 +306,6 @@ body {
 .nav-list {
     width: 66%;
     max-width: 320px;
-    height: calc(100vh + 63px);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -316,6 +315,7 @@ body {
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
     background-color: rgba(0, 0, 0, 0.342);
+    z-index: 1;
 }
 
 .nav-list-item {
@@ -339,6 +339,12 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     animation: fadeIn linear 0.2s;
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 @keyframes fadeIn {
@@ -386,6 +392,8 @@ body {
 
     /* Section 1 */
     .section1 {
+        position: absolute;
+        top: 63px;
         background-size: auto;
         background-position: bottom;
     }
