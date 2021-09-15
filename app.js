@@ -29,4 +29,17 @@ function whileOnClick() {
     overlay.style.display = 'none';
 }
 
-// 
+// animation
+// let hotline = document.querySelector('.hotline');
+// let k = 0.8;
+// let effect = setInterval(frame, 3);
+// function frame() {
+//     if( k >= 1.12 ) {
+//         k -= 0.05;
+//     }
+//     else {
+//         k += 0.002
+//         hotline.style.transform = 'scale(' + k + ')';
+//     }
+    
+// }
