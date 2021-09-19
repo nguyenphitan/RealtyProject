@@ -320,8 +320,97 @@ body {
     margin: 0 auto;
 }
 
+/* Section2 Content */
 .section2-content {
     display: flex;
+    width: 100%;
+    height: 80%;
+    font-size: 1em;
+}
+
+/* Left */
+.section2-left {
+    width: 55%;
+    height: 100%;
+    border-right: 1px solid rgb(212, 210, 210);
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section2-left .s2-left-img {
+    width: 100%;
+    height: auto;
+}
+
+.section2-left span {
+    color: red;
+    font-weight: 600;
+}
+
+/* Right */
+.section2-right {
+    width: 39%;
+    height: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section2-right i, .section2-right span {
+    color: #398266;
+}
+
+.section2-right span {
+    font-weight: 600;;
+}
+
+.section2-right .section2-btn1, .section2-right .section2-btn2 {
+    background-color: #ffd357;
+    border-radius: 10px;
+    width: 70%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.section2-btn1 .content-btn, .section2-btn2 .content-btn {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section2-right .section2-btn2 {
+    display: none;
+}
+
+.content-btn {
+    color: #0a3643;
+}
+
+.content-btn i {
+    font-size: 1.4em;
+    color: #0a3643;
+}
+
+.s2-right-imgCity {
+    display: none;
+}
+
+.pricePDF {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.s2-right-img {
+    width: 14%;
+    height: auto;
 }
 
 
@@ -408,6 +497,11 @@ body {
 /* Mobile */
 @media (max-width: 46.1875em) {
 
+    body {
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
     /* Header */
     .container {
         width: 100%;
@@ -440,7 +534,6 @@ body {
 
     /* Section 1 */
     .section1 {
-        position: absolute;
         top: 63px;
         background-size: auto;
         background-position: bottom;
@@ -463,6 +556,71 @@ body {
     .policyItem6 {
         font-size: 0.92em;
     }
+
+    /* Section 2 */
+    .section2 {
+        width: 100%;
+        border-top: 1px solid rgb(212, 210, 210);
+        padding-top: 10%;
+    }
     
+    /* Title */
+    .section2-title {
+        width: 90%;
+        height: 26%;
+        font-size: 0.9em;
+    }
+
+    .section2-title p {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .section2-title .line-down {
+        width: 80%;
+        background-size: 100% 100%;
+        margin-top: 2.8%;
+    }
+
+    /* Section2 Content */
+    .section2-content {
+        width: 100%;
+        display: block;
+    }
+
+    /* Left */
+    .section2-left {
+        width: 90%;
+        height: 46%;
+        margin: 0 auto;
+        border: none;
+        font-size: 0.86em;
+        justify-content: space-evenly;
+    }
+
+    .s2-left-img {
+        display: none;
+    }
+
+    /* Right */
+    .section2-right {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .s2-right-imgCity {
+        display: block;
+        height: 25%;
+    }
+
+    .section2-right .section2-btn1 {
+        display: none;
+    }
+
+    .section2-right .section2-btn2 {
+        display: block;
+    }
+
+
 
 }
