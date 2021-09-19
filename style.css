@@ -591,11 +591,16 @@ body {
     /* Left */
     .section2-left {
         width: 90%;
-        height: 46%;
+        height: 50%;
         margin: 0 auto;
         border: none;
+        display: block;
         font-size: 0.86em;
         justify-content: space-evenly;
+    }
+
+    .section2-left p {
+        margin: 4.4% auto;
     }
 
     .s2-left-img {
@@ -605,12 +610,18 @@ body {
     /* Right */
     .section2-right {
         width: 90%;
+        display: block;
         margin: 0 auto;
+    }
+
+    .section2-right p, .section2-right div, .section2-right img {
+        margin: 4.4% auto;
     }
 
     .s2-right-imgCity {
         display: block;
         height: 25%;
+        width: 100%;
     }
 
     .section2-right .section2-btn1 {
