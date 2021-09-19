@@ -569,6 +569,7 @@ body {
         width: 90%;
         height: 26%;
         font-size: 0.9em;
+        display: block;
     }
 
     .section2-title p {
