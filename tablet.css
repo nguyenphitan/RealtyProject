@@ -15,7 +15,7 @@
 
     /* Section 1 */
     .section1 {
-        height: 50vh;
+        height: 50vh !important;
         background-size: 200%;
     }
 
@@ -35,6 +35,12 @@
 
     /* Section2 */
     .section2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* Section 3 */
+    .section3 {
         width: 100%;
         height: 50vh;
     }
