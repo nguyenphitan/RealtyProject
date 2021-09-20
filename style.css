@@ -18,6 +18,9 @@ body {
     height: 63px;
     width: 100%;
     background: linear-gradient(#09363f,#134f49);
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .container {
@@ -151,6 +154,7 @@ body {
 
 /* Section 1 */
 .section1 {
+    padding-top: 63px;
     width: 100%;
     height: calc(100vh - 63px);
     margin: 0 auto;
@@ -630,7 +634,6 @@ body {
 
     /* Section 1 */
     .section1 {
-        top: 63px;
         background-size: auto;
         background-position: bottom;
     }
@@ -663,16 +666,20 @@ body {
     /* Section 2 */
     .section2 {
         width: 100%;
-        border-top: 1px solid rgb(212, 210, 210);
-        padding-top: 10%;
+        height: 1100.47px;
+        padding-top: 8%;
     }
     
     /* Title */
     .section2-title {
         width: 90%;
-        height: 26%;
+        height: 16%;
         font-size: 0.9em;
         display: block;
+    }
+
+    .section2-title h1 {
+        font-size: 2.26em;
     }
 
     .section2-title p {
@@ -689,13 +696,14 @@ body {
     /* Section2 Content */
     .section2-content {
         width: 100%;
+        height: 84%;
         display: block;
     }
 
     /* Left */
     .section2-left {
         width: 90%;
-        height: 50%;
+        height: 28%;
         margin: 0 auto;
         border: none;
         display: block;
@@ -714,6 +722,7 @@ body {
     /* Right */
     .section2-right {
         width: 90%;
+        height: 50%;
         display: block;
         margin: 0 auto;
     }
@@ -724,7 +733,7 @@ body {
 
     .s2-right-imgCity {
         display: block;
-        height: 25%;
+        height: 30%;
         width: 100%;
     }
 
@@ -734,7 +743,69 @@ body {
 
     .section2-right .section2-btn2 {
         display: block;
+        animation: effect ease-in 3s infinite;
     }
+
+    /* Section 3 */
+    .section3 {
+        width: 100%;
+        height: 850.378px;
+    }
+
+    /* Title */
+    .section3-title {
+        width: 90%;
+        height: 15%;
+        margin: 0 auto;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    /* Content */
+    .section3-content {
+        width: 100%;
+        height: 84%;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .section3-left {
+        width: 100%;
+        height: 40%;
+        margin-bottom: 5%;
+    }
+
+    .s3-left-img {
+        height: 100%;
+        width: 98%;
+        border: none;
+        margin: 0 auto;
+    }
+
+    .s3-left-content-btn {
+        position: absolute;
+        bottom: 2%;
+        left: 10%;
+        height: 7%;
+        animation: none;
+    }
+
+    .section3-right {
+        width: 100%;
+        height: 46%;
+    }
+
+    .s3-right-img {
+        width: 98%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
 
 
 
